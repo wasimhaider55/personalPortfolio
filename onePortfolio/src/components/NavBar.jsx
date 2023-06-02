@@ -39,8 +39,8 @@ const NavBar = () => {
             <ul className='hidden md:flex'>
                 {
                     navBar.map(({ id, name ,href }) => (
-                        <li  className='px-4 cursor-pointer capitalize font-medium text-gray-300
-                        hover:scale-105 duration-200' key={id}>
+                        <li  className='px-4 cursor-pointer capitalize font-medium
+                        hover:scale-105 duration-200 hover:text-cyan-500' key={id}>
                             <Link 
                               to={href}
                               activeClass="active"

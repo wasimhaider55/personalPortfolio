@@ -12,32 +12,32 @@ const Footer = () => {
     const footer = [
         {
             id: 1,
-            icon: <FiLinkedin />,
+            icon: <FiLinkedin size={25} />,
             href: "https://www.linkedin.com/in/wasim-haider-559721244/",
         },
         {
             id: 2,
-            icon: <FiGithub />,
+            icon: <FiGithub size={25} />,
             href: "https://github.com/wasimhaider55",
         },
         {
             id: 3,
-            icon: <FiInstagram />,
+            icon: <FiInstagram size={25} />,
             href: "https://instagram.com/wasimhaider14379?igshid=ZGUzMzM3NWJiOQ==",
         },
         {
             id: 4,
-            icon: <FiFacebook />,
+            icon: <FiFacebook size={25} />,
             href: "https://www.facebook.com/engrWasimKhan55/",
         },
         {
             id: 5,
-            icon: <FiTwitter />,
+            icon: <FiTwitter size={25} />,
             href: "https://twitter.com/WasimHa35327652?t=41PKrWnQOYBWJVaPeseNOw&s=09",
         },
         {
             id: 6,
-            icon: <FiYoutube />,
+            icon: <FiYoutube size={25} />,
             href: "https://www.youtube.com/@wmhshorts4943",
         }
     ]
@@ -56,7 +56,7 @@ const Footer = () => {
                         {
                             footer.map(({ id, icon, href }) => (
                                 <a key={id} className=' text-white hover:text-cyan-500 hover:scale-105 duration-300' href={href} >
-                                    {icon}
+                                    {icon} 
                                 </a>
 
                             ))}
