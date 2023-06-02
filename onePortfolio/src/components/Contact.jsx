@@ -2,9 +2,8 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div
-            name="contact"
-            className=' w-full h-140 bg-gradient-to-b from-black to-gray-800  p-4 text-white pt-32'>
+        <section id='contact'
+            className='w-full h-140 bg-gradient-to-b from-black to-gray-800  p-4 text-white pt-32'>
             <div className=' flex flex-col max-w-screen-lg justify-center mx-auto p-4 h-full'>
                 <div className=' pb-8'>
                     <p className=' text-4xl font-bold border-b-4 border-gray-500 inline '>Contact</p>
@@ -24,7 +23,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

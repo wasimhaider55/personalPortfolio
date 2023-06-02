@@ -1,27 +1,34 @@
 import React, { useState } from 'react'
+import {Link} from "react-scroll"
 import { FaBars, FaTimes } from "react-icons/fa"
 const NavBar = () => {
     const [nav, setNav] = useState(false);
-    const links = [
+    // navigations
+    const navBar = [
         {
             id: 1,
-            link: "Home"
+           name: "Home",
+           href: "home"
         },
         {
             id: 2,
-            link: "About"
+           name: "About",
+           href: "about"
         },
         {
             id: 3,
-            link: "Portfolio"
+           name: "Portfolio",
+           href: "portfolio"
         },
         {
             id: 4,
-            link: "Experience"
+           name: "Experience",
+           href: "experience"
         },
         {
             id: 5,
-            link: "Contact"
+           name: "Contact",
+           href: "contact"
         }
     ]
     return (
@@ -31,13 +38,25 @@ const NavBar = () => {
             </div>
             <ul className='hidden md:flex'>
                 {
-                    links.map(({ id, link }) => (
-                        <li key={id} className='px-4 cursor-pointer capitalize font-medium text-gray-300
-                        hover:scale-105 duration-200'>{link}</li>
+                    navBar.map(({ id, name ,href }) => (
+                        <li  className='px-4 cursor-pointer capitalize font-medium text-gray-300
+                        hover:scale-105 duration-200' key={id}>
+                            <Link 
+                              to={href}
+                              activeClass="active"
+                              spy={true}
+                              smooth={true}
+                              duration={400}
+                              offset={-80}
+                              className="transition-all duration-400"
+                            >
+                                {name}
+                            </Link>
+                        </li>
                     ))
                 }
             </ul>
-
+            {/* for mobile devices  */}
             <div
                 onClick={() => setNav(!nav)}
                 className='cursor-pointer pr-4 z-10 text-gray-300 md:hidden '>
@@ -48,8 +67,21 @@ const NavBar = () => {
                 <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full
                  h-screen bg-gradient-to-b from-black to-gray-800 text-gray-300 '>
                     {
-                        links.map(({ id, link }) => (
-                            <li key={id} className='px-4 cursor-pointer capitalize py-6 text-4xl'>{link}</li>
+                        navBar.map(({ id, name , href }) => (
+                            <li className='px-4 cursor-pointer capitalize py-6 text-4xl'  key={id} >
+                               <Link 
+                              to={href}
+                              activeClass="active"
+                              spy={true}
+                              smooth={true}
+                              duration={400}
+                              offset={-80}
+                              className="transition-all duration-400"
+                              onClick={() => setNav(false)}
+                            >
+                                {name}
+                            </Link>  
+                                </li>
                         ))
                     }
                 </ul>

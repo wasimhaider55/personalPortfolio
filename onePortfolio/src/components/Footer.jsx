@@ -4,7 +4,8 @@ import {
     FiLinkedin,
     FiInstagram,
     FiGithub,
-    FiTwitter
+    FiTwitter,
+    FiYoutube
 } from 'react-icons/fi';
 
 const Footer = () => {
@@ -12,27 +13,32 @@ const Footer = () => {
         {
             id: 1,
             icon: <FiLinkedin />,
-            href: "https://www.linkedin.com/in/hikmat-bangash-84415821a/",
+            href: "https://www.linkedin.com/in/wasim-haider-559721244/",
         },
         {
             id: 2,
             icon: <FiGithub />,
-            href: "https://github.com/Hikmat-Bangash",
+            href: "https://github.com/wasimhaider55",
         },
         {
             id: 3,
             icon: <FiInstagram />,
-            href: "https://www.instagram.com/hikmatbangash88/",
+            href: "https://instagram.com/wasimhaider14379?igshid=ZGUzMzM3NWJiOQ==",
         },
         {
             id: 4,
             icon: <FiFacebook />,
-            href: "https://web.facebook.com/hikmatkhan.bangash/",
+            href: "https://www.facebook.com/engrWasimKhan55/",
         },
         {
             id: 5,
             icon: <FiTwitter />,
-            href: "https://twitter.com/HikmatkhanBang5",
+            href: "https://twitter.com/WasimHa35327652?t=41PKrWnQOYBWJVaPeseNOw&s=09",
+        },
+        {
+            id: 6,
+            icon: <FiYoutube />,
+            href: "https://www.youtube.com/@wmhshorts4943",
         }
     ]
     return (
@@ -49,7 +55,7 @@ const Footer = () => {
                     <div className='flex space-x-6 items-center justify-center'>
                         {
                             footer.map(({ id, icon, href }) => (
-                                <a key={id} className=' text-white hover:text-cyan-500 hover:scale-125 duration-300' href={href} >
+                                <a key={id} className=' text-white hover:text-cyan-500 hover:scale-105 duration-300' href={href} >
                                     {icon}
                                 </a>
 
@@ -57,7 +63,7 @@ const Footer = () => {
                     </div>
 
                     <p className=' hidden md:block text-white text-md'>
-                        &copy;2023 Wasim Haider
+                        &copy;2023 Engr Wasim Haider
                     </p>
                 </div>
             </div>
