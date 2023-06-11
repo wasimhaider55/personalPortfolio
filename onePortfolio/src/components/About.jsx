@@ -9,14 +9,12 @@ const About = () => {
                 <div className='  pb-8'>
                     <p className=' text-4xl font-bold inline  border-b-4 border-gray-500  '>About</p>
                 </div>
-                <p className=' text-xl mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad veniam saepe voluptatibus dolorem quibusdam, excepturi, pariatur
-                    blanditiis eaque ab corporis quam omnis expedita sapiente aliquid. Veniam impedit minima voluptates sunt maxime soluta unde
-                    eius distinctio dicta consequuntur cumque iusto, quo perspiciatis sapiente dignissimos? Eum facilis quasi mollitia adipisci
-                    obcaecati voluptate.</p>
+                <p className=' text-xl mt-5'>I'm a Software Engineering Student of the  final semester
+                    As a front-end developer, I have a passion for creating dynamic and interactive web applications. With seven months of experience in tailwind css,
+                    bootstrap css,  React.js, Node.js and Express.js
+                </p>
                 <br />
-                <p className=' text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet error quidem nesciunt adipisci. Commodi sapiente vitae totam nesciunt
-                    odit alias vero. Consequuntur, tempore nesciunt. Libero incidunt rerum quidem debitis voluptate at a, tempore laboriosam illum
-                    corrupti ducimus nisi nulla alias sint error natus porro numquam, qui quisquam amet dicta itaque.
+                <p className=' text-xl'>
 
                 </p>
 
