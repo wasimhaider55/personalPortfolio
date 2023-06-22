@@ -1,13 +1,13 @@
 import React from 'react';
 import html from "../assets/html.png"
 import css from "../assets/css.png"
+import tailwind from "../assets/tailwind.png"
+import bootstrap from "../assets/bootstrap.png"
 import javascript from "../assets/javascript.png"
 import nextjs from "../assets/nextjs.png"
 import node from "../assets/node.png"
 import react from "../assets/react.png"
-import tailwind from "../assets/tailwind.png"
 import github from "../assets/github.png"
-import graphql from "../assets/graphql.png"
 
 const Experience = () => {
   const worked = [
@@ -15,55 +15,55 @@ const Experience = () => {
       id: 1,
       src: html,
       title: "HTML",
-      style: "shadow-orange-500"
+      style: "shadow-orange-600"
     },
     {
       id: 2,
       src: css,
       title: "CSS",
-      style: "shadow-green-500"
+      style: "shadow-blue-600"
     },
     {
       id: 3,
+      src: tailwind,
+      title: "TAILWIND",
+      style: "shadow-cyan-500"
+    },
+    {
+      id: 4,
+      src: bootstrap,
+      title: "BOOTSTRAP",
+      style: "shadow-violet-700"
+    },
+    {
+      id: 5,
       src: javascript,
       title: "JAVASCRIPT",
       style: "shadow-yellow-500"
     },
     {
-      id: 4,
-      src: nextjs,
-      title: "NEXTJS",
-      style: "shadow-red-500"
-    },
-    {
-      id: 5,
-      src: node,
-      title: "NODE",
-      style: "shadow-pink-500"
-    },
-    {
       id: 6,
       src: react,
-      title: "REACT",
-      style: "shadow-gray-500"
+      title: "REACTJS",
+      style: "shadow-cyan-500"
     },
     {
       id: 7,
-      src: tailwind,
-      title: "TAILWIND",
-      style: "shadow-blue-500"
+      src: nextjs,
+      title: "NEXTJS",
+      style: "shadow-gray-400"
     },
     {
       id: 8,
-      src: github,
-      title: "GITHUB",
-      style: "shadow-purple-500"
+      src: node,
+      title: "NODEJS",
+      style: "shadow-lime-600"
     },
     {
       id: 9,
-      src: graphql,
-      title: "GRAPHQL",
-      style: "shadow-red-500"
+      src: github,
+      title: "GITHUB",
+      style: "shadow-gray-500"
     },
   ]
   return (
