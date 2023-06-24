@@ -1,5 +1,5 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+import adventure from "../assets/portfolio/adventure.png"
 import installNode from "../assets/portfolio/installNode.jpg";
 import navbar from "../assets/portfolio/navbar.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
@@ -8,27 +8,29 @@ import reactWeather from "../assets/portfolio/reactWeather.jpg";
 const Portfolio = () => {
   const portfolios = [
     {
-      id:1,
-      src: arrayDestruct
+      id: 1,
+      src: adventure,
+      code: "https://github.com/wasimhaider55/cssProjects/tree/main/web3/adventure",
+      live: "https://css-projects-wasimhaider55.vercel.app/",
     },
     {
-      id:2,
+      id: 2,
       src: installNode
     },
     {
-      id:3,
+      id: 3,
       src: navbar
     },
     {
-      id:4,
+      id: 4,
       src: reactParallax
     },
     {
-      id:5,
+      id: 5,
       src: reactSmooth
     },
     {
-      id:6,
+      id: 6,
       src: reactWeather
     },
   ]
@@ -45,18 +47,18 @@ const Portfolio = () => {
 
         <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
-            portfolios.map(({id,src}) =>(
+            portfolios.map(({ id, src, code, live }) => (
               <div key={id} className=' shadow-md shadow-gray-600 rounded-lg '>
-            <img src={src} alt="" className=' rounded-md duration-200 hover:scale-105' />
-            <div className='flex items-center justify-center'>
-              <button className=' w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>Code</button>
-              <button className='w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-            </div>
-          </div>
+                <img src={src} alt="" className=' rounded-md duration-200 hover:scale-105' />
+                <div className='flex items-center justify-center'>
+                  <a href={code}><button className=' w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>Code</button></a>
+                  <a href={live}><button className='w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>Demo</button></a>
+                </div>
+              </div>
 
             ))
           }
-          
+
         </div>
 
 
