@@ -9,29 +9,31 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: adventure,
+      image: adventure,
+      lang:"HTMLCSS",
+      title:"Adventure",
       code: "https://github.com/wasimhaider55/cssProjects/tree/main/web3/adventure",
       live: "https://css-projects-wasimhaider55.vercel.app/",
     },
     {
       id: 2,
-      src: installNode
+      image: installNode
     },
     {
       id: 3,
-      src: navbar
+      image: navbar
     },
     {
       id: 4,
-      src: reactParallax
+      image: reactParallax
     },
     {
       id: 5,
-      src: reactSmooth
+      image: reactSmooth
     },
     {
       id: 6,
-      src: reactWeather
+      image: reactWeather
     },
   ]
   return (
@@ -42,14 +44,16 @@ const Portfolio = () => {
       <div className=' max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className=' pb-8' >
           <p className=' text-4xl font-bold  inline border-b-4 border-gray-500 '>Portfolio</p>
-          <p className='py-6'>check out some  of my work righ here </p>
+          <p className='py-6'>check out some  of my work right here </p>
         </div>
 
         <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
-            portfolios.map(({ id, src, code, live }) => (
+            portfolios.map(({ id, image,lang,title, code, live }) => (
               <div key={id} className=' shadow-md shadow-gray-600 rounded-lg '>
-                <img src={src} alt="" className=' rounded-md duration-200 hover:scale-105' />
+                <img src={image} alt="" className='p-3 rounded-3xl duration-200 hover:scale-105' />
+                <h1 className='text-center py-2'>{lang}</h1>
+                <h1 className='text-center text-2xl font-bold'>{title}</h1>
                 <div className='flex items-center justify-center'>
                   <a href={code}><button className=' w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>Code</button></a>
                   <a href={live}><button className='w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>Demo</button></a>
