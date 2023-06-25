@@ -10,18 +10,26 @@ const Portfolio = () => {
     {
       id: 1,
       image: adventure,
-      lang:"HTMLCSS",
-      title:"Adventure",
+      lang: "HTMLCSS",
+      title: "Adventure",
       code: "https://github.com/wasimhaider55/cssProjects/tree/main/web3/adventure",
       live: "https://css-projects-wasimhaider55.vercel.app/",
     },
     {
       id: 2,
-      image: installNode
+      image: installNode,
+      lang: "Bootstrap",
+      title: "Navtec",
+      code: "https://github.com/wasimhaider55/bootstrapCssProjects/tree/main/web1",
+      live: "https://bootstrap-css-projects.vercel.app/",
     },
     {
       id: 3,
-      image: navbar
+      image: navbar,
+      lang: "Bootstrap",
+      title: "CodeWithUs",
+      code: "https://github.com/wasimhaider55/bootstrapCssProjects",
+      live: "https://bootstrap-css-henna.vercel.app/",
     },
     {
       id: 4,
@@ -49,7 +57,7 @@ const Portfolio = () => {
 
         <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
-            portfolios.map(({ id, image,lang,title, code, live }) => (
+            portfolios.map(({ id, image, lang, title, code, live }) => (
               <div key={id} className=' shadow-md shadow-gray-600 rounded-lg '>
                 <img src={image} alt="" className='p-3 rounded-3xl duration-200 hover:scale-105' />
                 <h1 className='text-center py-2'>{lang}</h1>
