@@ -1,14 +1,14 @@
 import React from 'react'
 import adventure from "../assets/portfolio/adventure.png"
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
+import navtec from "../assets/portfolio/navtec.png";
+import codewithus from "../assets/portfolio/codewithus.png";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 const Portfolio = () => {
   const portfolios = [
     {
-      id: 1,
+      id: 0,
       image: adventure,
       lang: "HTMLCSS",
       title: "Adventure",
@@ -16,31 +16,31 @@ const Portfolio = () => {
       live: "https://css-projects-wasimhaider55.vercel.app/",
     },
     {
-      id: 2,
-      image: installNode,
+      id: 1,
+      image: navtec,
       lang: "Bootstrap",
       title: "Navtec",
       code: "https://github.com/wasimhaider55/bootstrapCssProjects/tree/main/web1",
       live: "https://bootstrap-css-projects.vercel.app/",
     },
     {
-      id: 3,
-      image: navbar,
+      id: 2,
+      image: codewithus,
       lang: "Bootstrap",
       title: "CodeWithUs",
       code: "https://github.com/wasimhaider55/bootstrapCssProjects",
       live: "https://bootstrap-css-henna.vercel.app/",
     },
     {
-      id: 4,
+      id: 3,
       image: reactParallax
     },
     {
-      id: 5,
+      id: 4,
       image: reactSmooth
     },
     {
-      id: 6,
+      id: 5,
       image: reactWeather
     },
   ]

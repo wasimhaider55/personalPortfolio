@@ -47,7 +47,7 @@ const Footer = () => {
                 <div className='flex items-center justify-around'>
 
                     <div class="md:text-3xl text-2xl font-bold -tracking-wide ">
-                        <span class=" text-white from-white">
+                        <span class="text-white from-white">
                             WMH
                         </span>
                     </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                     <div className='flex space-x-6 items-center justify-center'>
                         {
                             footer.map(({ id, icon, href }) => (
-                                <a key={id} className=' text-white hover:text-cyan-500 hover:scale-105 duration-300' href={href} >
+                                <a key={id} className=' text-white hover:text-rose-600 hover:scale-125 duration-300' href={href} >
                                     {icon} 
                                 </a>
 
