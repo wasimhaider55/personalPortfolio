@@ -2,6 +2,7 @@ import React from 'react'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
+
 const Contact = () => {
     const formik = useFormik({
         initialValues: {
@@ -15,14 +16,14 @@ const Contact = () => {
         validationSchema: Yup.object({
             name:
                 Yup.string()
-                    .required(),
+                    .required("Please fill out this field,"),
             phone:
                 Yup.number()
-                    .required(),
+                    .required("Please fill out this field,"),
             email:
                 Yup.string()
                     .email()
-                    .required(),
+                    .required("Please fill out this field,"),
         })
     })
     return (
@@ -49,7 +50,7 @@ const Contact = () => {
                                 onBlur={formik.handleBlur}
                                 className=' p-2 w-full bg-transparent border-2 rounded-md  text-white focus:outline-none'
                             />
-                            {formik.touched.name && formik.errors.name ? formik.errors.name : null}
+                            {formik.touched.name && formik.errors.name ? <p className='text-red-500'> {formik.errors.name} </p> : null}
                             <input
                                 type='text'
                                 name='phone'
@@ -60,7 +61,7 @@ const Contact = () => {
                                 onBlur={formik.handleBlur}
                                 className=' p-2 w-full bg-transparent border-2 rounded-md  text-white focus:outline-none'
                             />
-                            {formik.touched.phone && formik.errors.phone ? formik.errors.name : null}
+                            {formik.touched.phone && formik.errors.phone ?  <p className='text-red-500'> {formik.errors.phone} </p> : null}
                         </div>
                         <input
                             type='email'
@@ -72,7 +73,7 @@ const Contact = () => {
                             onBlur={formik.handleBlur}
                             className=' my-4 p-2 bg-transparent border-2 rounded-md  text-white focus:outline-none'
                         />
-                        {formik.touched.email && formik.errors.email ? formik.errors.name : null}
+                        {formik.touched.email && formik.errors.email ?<p className='text-red-500'> {formik.errors.email} </p> : null}
                         <textarea
                             name="message"
                             rows="10"
