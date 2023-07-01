@@ -6,20 +6,18 @@ import * as Yup from 'yup';
 const Contact = () => {
     const formik = useFormik({
         initialValues: {
-            name: "",
-            phone: "",
+            fname: "",
+            lname: "",
             email: ""
         },
         onSubmit: (value) => {
             alert("successfully rigestered!!!")
         },
         validationSchema: Yup.object({
-            name:
-                Yup.string()
-                    .required("Please fill out this field,"),
-            phone:
-                Yup.number()
-                    .required("Please fill out this field,"),
+            fname:
+                Yup.string(),
+            lname:
+                Yup.number(),
             email:
                 Yup.string()
                     .email()
@@ -42,30 +40,30 @@ const Contact = () => {
                         <div className='flex justify-between gap-4'>
                             <input
                                 type='text'
-                                name='name'
-                                id='name'
-                                required placeholder='Enter Your Name '
-                                value={formik.name}
+                                fname='fname'
+                                id='fname'
+                                required placeholder='First Name'
+                                value={formik.fname}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 className=' p-2 w-full bg-transparent border-2 rounded-md  text-white focus:outline-none'
                             />
-                            {formik.touched.name && formik.errors.name ? <p className='text-red-500'> {formik.errors.name} </p> : null}
+                            {formik.touched.fname && formik.errors.fname ? <p className='text-red-500'> {formik.errors.fname} </p> : null}
                             <input
                                 type='text'
-                                name='phone'
-                                id='phone'
-                                required placeholder='Enter Phone Number'
-                                value={formik.phone}
+                                fname='lname'
+                                id='lname'
+                                required placeholder='Last Name '
+                                value={formik.lname}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 className=' p-2 w-full bg-transparent border-2 rounded-md  text-white focus:outline-none'
                             />
-                            {formik.touched.phone && formik.errors.phone ?  <p className='text-red-500'> {formik.errors.phone} </p> : null}
+                            {formik.touched.lname && formik.errors.lname ?  <p className='text-red-500'> {formik.errors.lname} </p> : null}
                         </div>
                         <input
                             type='email'
-                            name='email'
+                            fname='email'
                             id='email'
                             required placeholder='Enter Your Email '
                             value={formik.email}
@@ -75,7 +73,7 @@ const Contact = () => {
                         />
                         {formik.touched.email && formik.errors.email ?<p className='text-red-500'> {formik.errors.email} </p> : null}
                         <textarea
-                            name="message"
+                            fname="message"
                             rows="10"
                             placeholder='Enter your message here!!!'
                             className='p-2 bg-transparent border-2 rounded-md  text-white focus:outline-none'>
