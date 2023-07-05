@@ -1,28 +1,25 @@
 import React from 'react'
 import { useFormik } from 'formik';
-import * as Yup from 'yup';
+// import * as Yup from 'yup';
 
 
 const Contact = () => {
     const formik = useFormik({
         initialValues: {
-            fname: "",
+            fname: " ",
             lname: "",
             email: ""
         },
-        onSubmit: (value) => {
-            alert("successfully rigestered!!!")
-        },
-        validationSchema: Yup.object({
-            fname:
-                Yup.string(),
-            lname:
-                Yup.number(),
-            email:
-                Yup.string()
-                    .email()
-                    .required("Please fill out this field,"),
-        })
+        // validationSchema: Yup.object({
+        //     fname:
+        //         Yup.string(),
+        //     lname:
+        //         Yup.string(),
+        //     email:
+        //         Yup.string()
+        //             .email()
+        //             .required("Please fill out this field,"),
+        // })
     })
     return (
         <section id='contact'
@@ -40,7 +37,7 @@ const Contact = () => {
                         <div className='flex justify-between gap-4'>
                             <input
                                 type='text'
-                                fname='fname'
+                                name='fname'
                                 id='fname'
                                 required placeholder='First Name'
                                 value={formik.fname}
@@ -51,7 +48,7 @@ const Contact = () => {
                             {formik.touched.fname && formik.errors.fname ? <p className='text-red-500'> {formik.errors.fname} </p> : null}
                             <input
                                 type='text'
-                                fname='lname'
+                                name='lname'
                                 id='lname'
                                 required placeholder='Last Name '
                                 value={formik.lname}
@@ -63,7 +60,7 @@ const Contact = () => {
                         </div>
                         <input
                             type='email'
-                            fname='email'
+                            name='email'
                             id='email'
                             required placeholder='Enter Your Email '
                             value={formik.email}
