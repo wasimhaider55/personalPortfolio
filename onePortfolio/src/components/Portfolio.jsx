@@ -2,9 +2,9 @@ import React from 'react'
 import adventure from "../assets/portfolio/adventure.png"
 import navtec from "../assets/portfolio/navtec.png";
 import codewithus from "../assets/portfolio/codewithus.png";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import uberEats from "../assets/portfolio/uberEats.png"
 const Portfolio = () => {
   const portfolios = [
     {
@@ -33,7 +33,11 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      image: reactParallax
+      image: uberEats,
+      lang: "React js",
+      title: "UberEats",
+      code: "https://github.com/wasimhaider55/uberEats/tree/main/frontend",
+      live: "https://uber-eats-nine.vercel.app/",
     },
     {
       id: 4,
@@ -63,8 +67,16 @@ const Portfolio = () => {
                 <h1 className='text-center py-2'>{lang}</h1>
                 <h1 className='text-center text-2xl font-bold'>{title}</h1>
                 <div className='flex items-center justify-center'>
-                  <a href={code}><button className=' w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>Code</button></a>
-                  <a href={live}><button className='w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>Demo</button></a>
+                  <a href={code}>
+                    <button className=' w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>
+                      Code
+                    </button>
+                  </a>
+                  <a href={live}>
+                    <button className='w-1/2 px-6  py-3 m-4 duration-200 hover:scale-105'>
+                      Demo
+                    </button>
+                  </a>
                 </div>
               </div>
 
