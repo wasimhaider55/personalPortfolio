@@ -2,9 +2,9 @@ import React from 'react'
 import adventure from "../assets/portfolio/adventure.png"
 import navtec from "../assets/portfolio/navtec.png";
 import codewithus from "../assets/portfolio/codewithus.png";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import uberEats from "../assets/portfolio/uberEats.png"
+import spogmaiFoundation from "../assets/portfolio/spogmaiFoundation.jpg"
 const Portfolio = () => {
   const portfolios = [
     {
@@ -41,7 +41,11 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      image: reactSmooth
+      image: spogmaiFoundation,
+      lang: "React js",
+      title: "Spogmai Foundation",
+      code: "https://github.com/wasimhaider55",
+      live: "https://spogmai-foundation.vercel.app/",
     },
     {
       id: 5,
