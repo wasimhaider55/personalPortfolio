@@ -1,10 +1,7 @@
 import React from 'react'
 import {
-    FiFacebook,
     FiLinkedin,
-    FiInstagram,
     FiGithub,
-    FiTwitter,
     FiYoutube
 } from 'react-icons/fi';
 
@@ -22,21 +19,6 @@ const Footer = () => {
         },
         {
             id: 3,
-            icon: <FiInstagram size={25} />,
-            href: "https://instagram.com/wasimhaider14379?igshid=ZGUzMzM3NWJiOQ==",
-        },
-        {
-            id: 4,
-            icon: <FiFacebook size={25} />,
-            href: "https://www.facebook.com/engrWasimKhan55/",
-        },
-        {
-            id: 5,
-            icon: <FiTwitter size={25} />,
-            href: "https://twitter.com/WasimHa35327652?t=41PKrWnQOYBWJVaPeseNOw&s=09",
-        },
-        {
-            id: 6,
             icon: <FiYoutube size={25} />,
             href: "https://www.youtube.com/@wmhshorts4943",
         }
